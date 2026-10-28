@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "thu-chi",
+    "name": "Sổ Quỹ",
     "slug": "thu-chi",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,10 +16,30 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.soquy.hoaqua"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite"
+    ],
+    "scheme": "soquy",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "e3a18916-e3d5-4543-9311-cdf6d660c5a2"
+      }
+    },
+    "owner": "huy15799"
   }
 }
